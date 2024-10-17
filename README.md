@@ -1,12 +1,16 @@
 # timezone-photo-embed
 
-Takes a given GPS embedded photo, and adds a timezone (OffsetTime)
+Easily embed the correct timezone into your photos using embedded GPS coordinates.
 
-## Dependencies
+This tool scans for `GPSLatitude` and `GPSLongitude` tags in a photo's metadata, determines the corresponding timezone, and saves it back to the image.
 
-This program uses `exiftool`, and must be installed and discoverable on the shell with the same name.
+## Requirements
+
+- `exiftool`: Ensure it's installed and accessible from the command line.
 
 ## Installing
+
+Install the tool via pipx;
 
 ```sh
 pipx install timezone-embed
